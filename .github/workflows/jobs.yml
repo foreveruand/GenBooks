@@ -6,6 +6,7 @@ on:
     - cron:  '0 22 * * *' # 6:00,18:00 （GMT+8）
   watch:
     types: started
+  workflow_dispatch:
 
 jobs:
   build:
