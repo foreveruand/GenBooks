@@ -31,10 +31,3 @@ jobs:
         python3 ./src/genBook.py
       env: 
           config: ${{ secrets.CONFIG }}
-    - name: update to repo
-      run: |
-        git config --global user.name ${{ secrets.GITHUBUSER }}
-        git config --global user.email ${{ secrets.GITHUBEMAIL }}
-        git add . && echo 添加变动文件
-        git commit -m 'update to repo' && echo commit
-        git push origin main && echo push!
