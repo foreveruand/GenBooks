@@ -118,7 +118,7 @@ class processRss:
                     feedmessage = {"articleid":"","title":post["title"],"content":post["body"],"date":post["nicedate"],"time":post["nicetime"],"blog":post["blog"],"author":post["author"]}
                     #print(post)
                     thisfeed["posts"].append(feedmessage)
-                self.rssjson.append(thisfeed)
+               self.rssjson.append(thisfeed)
         return self.rssjson
     def json2epub(self,rssjsons,booktitle="RSS Daily"):
         '''
